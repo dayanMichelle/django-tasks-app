@@ -1,0 +1,39 @@
+{% load static %}
+<htm>
+<head>
+        <title>Django</title>
+        <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+
+    <body>
+        <nav class="navbar container">
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'projects' %}">Projects</a>
+                </li>
+                <li>
+                    <a href="{% url 'tasks' %}">Tasks</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">About</a>
+                </li>
+                <li>
+                    <a href="{% url 'create_task' %}">Create a task ➕</a>
+                </li>
+                <li>
+                    <a href="{% url 'create_project' %}">Create a project ➕</a>
+                </li>
+            </ul>
+        </nav>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    </body>
+</htm>
+

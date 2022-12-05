@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+    <h1>Create a new task</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+         <select name="select">
+             {% for project in projects %}
+                <option value="{{ project.name }}">{{ project.name }}</option>
+            {% endfor %}
+        </select>
+
+        <button class="btn">
+            Save
+        </button>
+    </form>
+
+{% endblock %}

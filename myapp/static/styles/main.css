@@ -1,0 +1,67 @@
+body {
+    background-color: #404258;
+    color:white;
+}
+
+.navbar {
+    background: #474E68;
+    padding: 20px 0;
+
+}
+.navbar ul {
+    display:flex;
+    justify-content:space-between;
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    color: #6B728E;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 10px;
+
+}
+
+a {
+color: white;
+text-decoration: none
+}
+a:hover {
+ color: #404258;
+}
+.card {
+    background: #6B728E;
+    padding:5px;
+    margin-bottom: 2px;
+    font-size:10px
+}
+
+.input {
+    background: #6B728E;
+    padding: 10px;
+    text-align: center;
+    display:block;
+    color:white;
+    border:none;
+    border-radius: 5px
+}
+.btn {
+    padding: 7px;
+    border: none;
+    border-radius:5px;
+    margin: 5px 0px
+
+}
+.btn:hover {
+    cursor:pointer
+}
